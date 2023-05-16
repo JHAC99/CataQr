@@ -49,13 +49,13 @@
 </head>
 <body>
   <script>
-    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbxmpr9PrhxFm-BDq7RZ1X6ytsxBC-m72oMHNnaJlEJ33Sm1MQsPZtcgItdbsIhMYSgYdA/exec";
+    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbwWteG6slSUueaz17TaTgiHZ1ascMYAO5J_Z7-cq1QqDGblec3xiBC-Jop_B3HdosE2ww/exec";
     
     var url = document.location.href;
-    var k = url.substr(url.lastIndexOf("k=")+2);
+    var j = url.substr(url.lastIndexOf("j=")+2);
     
-    if(k){
-      fetch(AS_URL_BASE+'?k='+k)
+    if(j){
+      fetch(AS_URL_BASE+'?j='+j)
       .then(r => r.text())
       .then((r) => {
         console.log(r);
